@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CineplanetModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Cines">
+    <Key>
+      <PropertyRef Name="CinesId" />
+    </Key>
+    <Property Name="CinesId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="direccion" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="telefono" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Generos">
+    <Key>
+      <PropertyRef Name="GenerosId" />
+    </Key>
+    <Property Name="GenerosId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="descripcion" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="fecha_creacion" Type="DateTime" Precision="0" />
+    <Property Name="activo" Type="Boolean" />
+    <Property Name="pais_origen" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Peliculas" Relationship="Self.FK__Peliculas__Gener__267ABA7A" FromRole="Generos" ToRole="Peliculas" />
+  </EntityType>
+  <EntityType Name="Peliculas">
+    <Key>
+      <PropertyRef Name="PeliculasId" />
+    </Key>
+    <Property Name="PeliculasId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="titulo" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="duracion" Type="Int32" Nullable="false" />
+    <Property Name="clasificacion" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="estreno" Type="DateTime" Precision="0" />
+    <Property Name="GenerosId" Type="Int32" />
+    <NavigationProperty Name="Generos" Relationship="Self.FK__Peliculas__Gener__267ABA7A" FromRole="Peliculas" ToRole="Generos" />
+  </EntityType>
+  <Association Name="FK__Peliculas__Gener__267ABA7A">
+    <End Role="Generos" Type="Self.Generos" Multiplicity="0..1" />
+    <End Role="Peliculas" Type="Self.Peliculas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Generos">
+        <PropertyRef Name="GenerosId" />
+      </Principal>
+      <Dependent Role="Peliculas">
+        <PropertyRef Name="GenerosId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="CineplanetEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Cines" EntityType="Self.Cines" />
+    <EntitySet Name="Generos" EntityType="Self.Generos" />
+    <EntitySet Name="Peliculas" EntityType="Self.Peliculas" />
+    <AssociationSet Name="FK__Peliculas__Gener__267ABA7A" Association="Self.FK__Peliculas__Gener__267ABA7A">
+      <End Role="Generos" EntitySet="Generos" />
+      <End Role="Peliculas" EntitySet="Peliculas" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

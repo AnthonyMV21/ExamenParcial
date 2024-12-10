@@ -1,0 +1,122 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\usuario\\Desktop\\APLICACIONES WEB\\ExaParcialMondalgo\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1FB5940D-55AE-48F4-8333-50771E6FA658}|ExaParcialMondalgo.csproj|c:\\users\\usuario\\desktop\\aplicaciones web\\exaparcialmondalgo\\views\\peliculas\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1FB5940D-55AE-48F4-8333-50771E6FA658}|ExaParcialMondalgo.csproj|solutionrelative:views\\peliculas\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FB5940D-55AE-48F4-8333-50771E6FA658}|ExaParcialMondalgo.csproj|c:\\users\\usuario\\desktop\\aplicaciones web\\exaparcialmondalgo\\views\\cines\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1FB5940D-55AE-48F4-8333-50771E6FA658}|ExaParcialMondalgo.csproj|solutionrelative:views\\cines\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FB5940D-55AE-48F4-8333-50771E6FA658}|ExaParcialMondalgo.csproj|c:\\users\\usuario\\desktop\\aplicaciones web\\exaparcialmondalgo\\views\\cines\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1FB5940D-55AE-48F4-8333-50771E6FA658}|ExaParcialMondalgo.csproj|solutionrelative:views\\cines\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FB5940D-55AE-48F4-8333-50771E6FA658}|ExaParcialMondalgo.csproj|C:\\Users\\usuario\\Desktop\\APLICACIONES WEB\\ExaParcialMondalgo\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1FB5940D-55AE-48F4-8333-50771E6FA658}|ExaParcialMondalgo.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FB5940D-55AE-48F4-8333-50771E6FA658}|ExaParcialMondalgo.csproj|c:\\users\\usuario\\desktop\\aplicaciones web\\exaparcialmondalgo\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1FB5940D-55AE-48F4-8333-50771E6FA658}|ExaParcialMondalgo.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FB5940D-55AE-48F4-8333-50771E6FA658}|ExaParcialMondalgo.csproj|c:\\users\\usuario\\desktop\\aplicaciones web\\exaparcialmondalgo\\controllers\\cinescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FB5940D-55AE-48F4-8333-50771E6FA658}|ExaParcialMondalgo.csproj|solutionrelative:controllers\\cinescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\usuario\\Desktop\\APLICACIONES WEB\\ExaParcialMondalgo\\Views\\Peliculas\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Peliculas\\Create.cshtml",
+              "ToolTip": "C:\\Users\\usuario\\Desktop\\APLICACIONES WEB\\ExaParcialMondalgo\\Views\\Peliculas\\Create.cshtml",
+              "RelativeToolTip": "Views\\Peliculas\\Create.cshtml",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAACcAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-10T02:36:18.226Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\usuario\\Desktop\\APLICACIONES WEB\\ExaParcialMondalgo\\Views\\Cines\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Cines\\Index.cshtml",
+              "ToolTip": "C:\\Users\\usuario\\Desktop\\APLICACIONES WEB\\ExaParcialMondalgo\\Views\\Cines\\Index.cshtml",
+              "RelativeToolTip": "Views\\Cines\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-10T02:35:30.822Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\usuario\\Desktop\\APLICACIONES WEB\\ExaParcialMondalgo\\Views\\Cines\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Cines\\Create.cshtml",
+              "ToolTip": "C:\\Users\\usuario\\Desktop\\APLICACIONES WEB\\ExaParcialMondalgo\\Views\\Cines\\Create.cshtml",
+              "RelativeToolTip": "Views\\Cines\\Create.cshtml",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAADEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-10T02:35:20.262Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\usuario\\Desktop\\APLICACIONES WEB\\ExaParcialMondalgo\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\usuario\\Desktop\\APLICACIONES WEB\\ExaParcialMondalgo\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-10T02:14:43.604Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CinesController.cs",
+              "DocumentMoniker": "C:\\Users\\usuario\\Desktop\\APLICACIONES WEB\\ExaParcialMondalgo\\Controllers\\CinesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CinesController.cs",
+              "ToolTip": "C:\\Users\\usuario\\Desktop\\APLICACIONES WEB\\ExaParcialMondalgo\\Controllers\\CinesController.cs",
+              "RelativeToolTip": "Controllers\\CinesController.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAIwEYAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T17:12:39.293Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\usuario\\Desktop\\APLICACIONES WEB\\ExaParcialMondalgo\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\usuario\\Desktop\\APLICACIONES WEB\\ExaParcialMondalgo\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-09T15:59:22.849Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

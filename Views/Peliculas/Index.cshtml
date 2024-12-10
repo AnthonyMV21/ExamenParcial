@@ -1,0 +1,61 @@
+﻿@model IEnumerable<ExaParcialMondalgo.Models.Peliculas>
+
+@{
+    ViewBag.Title = "Películas | CinePlanet Perú";
+}
+
+<h2>Registra Nuevos Estrenos</h2>
+
+<p>
+    @Html.ActionLink("Nuevas Películas", "Create", null, new { @class = "btn btn-outline-dark" })
+</p>
+
+<table class="table table-striped table-bordered table-hover">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.titulo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.duracion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.clasificacion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.estreno)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.GenerosId)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr class="table-primary">
+                <td class="table-secondary">
+                    @Html.DisplayFor(modelItem => item.titulo)
+                </td>
+                <td class="table-success">
+                    @Html.DisplayFor(modelItem => item.duracion)
+                </td>
+                <td class="table-warning">
+                    @Html.DisplayFor(modelItem => item.clasificacion)
+                </td>
+                <td class="table-info">
+                    @Html.DisplayFor(modelItem => item.estreno)
+                </td>
+                <td class="table-light">
+                    @Html.DisplayFor(modelItem => item.GenerosId)
+                </td>
+                <td class="table-danger">
+                    @Html.ActionLink("Editar", "Edit", new { id = item.PeliculasId }, new { @class = "btn btn-warning btn-sm" }) |
+                    @Html.ActionLink("Detalles", "Details", new { id = item.PeliculasId }, new { @class = "btn btn-info btn-sm" }) |
+                    @Html.ActionLink("Eliminar", "Delete", new { id = item.PeliculasId }, new { @class = "btn btn-danger btn-sm" })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

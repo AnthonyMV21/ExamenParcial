@@ -1,0 +1,49 @@
+﻿@model IEnumerable<ExaParcialMondalgo.Models.Cines>
+
+@{
+    ViewBag.Title = "CinePlanet Perú |";
+}
+
+<h2>Registrar Nuevas Sedes</h2>
+
+<p>
+    @Html.ActionLink("Crear Nuevo Cine", "Create", null, new { @class = "btn btn-outline-dark" })
+</p>
+
+<table class="table table-striped table-bordered table-hover">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.nombre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.direccion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.telefono)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr class="table-primary">
+                <td class="table-secondary">
+                    @Html.DisplayFor(modelItem => item.nombre)
+                </td>
+                <td class="table-success">
+                    @Html.DisplayFor(modelItem => item.direccion)
+                </td>
+                <td class="table-warning">
+                    @Html.DisplayFor(modelItem => item.telefono)
+                </td>
+                <td class="table-danger">
+                    @Html.ActionLink("Editar", "Edit", new { id = item.CinesId }, new { @class = "btn btn-warning btn-sm" }) |
+                    @Html.ActionLink("Detalles", "Details", new { id = item.CinesId }, new { @class = "btn btn-info btn-sm" }) |
+                    @Html.ActionLink("Eliminar", "Delete", new { id = item.CinesId }, new { @class = "btn btn-danger btn-sm" })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

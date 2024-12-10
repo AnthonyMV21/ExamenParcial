@@ -1,0 +1,52 @@
+﻿@model ExaParcialMondalgo.Models.Peliculas
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Peliculas</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.titulo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.titulo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.duracion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.duracion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.clasificacion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.clasificacion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.estreno)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.estreno)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    <div class="d-flex gap-3">
+        @Html.ActionLink("Editar", "Edit", new { id = Model.PeliculasId }, new { @class = "btn btn-primary" })
+        @Html.ActionLink("Volver al listado", "Index", null, new { @class = "btn btn-outline-dark" })
+    </div>
+</p>

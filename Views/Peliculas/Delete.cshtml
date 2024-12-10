@@ -1,0 +1,65 @@
+﻿@model ExaParcialMondalgo.Models.Peliculas
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Peliculas</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.titulo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.titulo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.duracion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.duracion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.clasificacion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.clasificacion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.estreno)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.estreno)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GenerosId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GenerosId)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="d-flex gap-3">
+            <input type="submit" value="Eliminar" class="btn btn-secondary" /> |
+            @Html.ActionLink("Volver al listado", "Index", null, new { @class = "btn btn-outline-dark" })
+        </div>
+    }
+</div>
